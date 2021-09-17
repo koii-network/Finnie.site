@@ -1,0 +1,74 @@
+@import "variables";
+
+#faq-header {
+  position: relative;
+  background: linear-gradient(to bottom, #bcf3ef 11%, white 50%);
+  color: $blueDark;
+  // min-height: 535px;
+  min-height: calc(25vh);
+  padding-top: 75px;
+  display: flex;
+  align-items: flex-end;
+  &::before {
+    background-image: url("/img/run/run-vector.svg");
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    content: "";
+    display: block;
+    height: 700px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    opacity: 0.4;
+  }
+  .container {
+    .row {
+      .s-title{margin-top: 70px;}
+          .font-cap1{
+            font-weight: bold;
+            font-size: 40px;
+            line-height: 56px;
+          }
+          .font-cap2{
+            font-size: 22px;
+            line-height: 32px;
+          }
+      }
+    }
+  
+    @media (max-width: $sm) {
+      padding: 30px 0;
+      background-image: linear-gradient(to bottom, #bcf3ef 11%, white 50%);
+      &::before {
+        height: 400px;
+        opacity: 0.4;
+        background-image: url("/img/homepage/vector-mobile.svg");
+      }
+    .container {
+      justify-content: space-around !important;
+      .row {
+        .font-cap1{
+          font-size: 36px;
+          line-height: 56px;
+        }
+        .font-cap2{
+          font-size: 20px;
+          line-height: 32px;
+        }
+        
+      }
+    }
+  }
+  @media (min-width: $xxl) {
+    .container {
+      .row {
+        h1 {
+          font-size: 42px !important;
+        }
+        h3 {
+          font-size: 32px !important;
+        }
+      }
+    }
+  }
+}

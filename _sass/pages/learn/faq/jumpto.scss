@@ -1,0 +1,54 @@
+@import "variables";
+
+#jumpto {
+    background: white;
+    color: $blueDark;
+    padding: 75px 0;
+    min-height: 456px;
+    .container {
+            .row-left {
+                h1 {
+                    margin-bottom: 24px;
+                }
+                .list {
+                    list-style-type: none;
+                    font-weight: 600;
+                    font-size: 20px;
+                    line-height: 45px;
+                    
+                    a {
+                        color: #171753;
+                    }
+                }
+            }
+            .row-right {
+                background-size: auto 100%;
+                content: "";
+                display: flex;
+                height: 100px;
+                position: relative;
+                top: 0;
+                width: 100%;
+                img {
+                    width: 850px;
+                    height: 400px;
+                }
+            }
+    }
+    @media (max-width: $sm) {
+        padding: 56px 0;
+        .container {
+            h1 {
+                font-size:35px !important;
+            }
+
+            .row-right {
+                margin-bottom: 80px;
+                img {
+                    width: auto;
+                    height: auto;
+                }
+            }
+        }
+    }
+}

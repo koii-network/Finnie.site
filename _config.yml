@@ -1,0 +1,64 @@
+
+collections_dir: all_collections
+
+future: true
+
+keep_files: ['node_modules/']
+unpublished: true
+
+collections:
+  
+
+  news: 
+    layout: front 
+    output: true
+
+  faq:
+    layout: front
+    output: true  
+  
+  jobs:
+    layout: front
+    output: true 
+  
+  guides:
+    layout: front
+    output: true
+
+  documents:
+    layout: front
+    output: false
+    
+  resources:
+    layout: front
+    output: false
+
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+exclude :
+ - node_modules/      
+
+include: ["node_modules"]
+exclude: []
+
+# Site settings
+title:
+email:
+description: > # this means to ignore newlines until "baseurl:"
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "" # the base hostname & protocol for your site
+
+twitter_username:
+github_username:
+
+# Build settings
+markdown: kramdown
+
+url: "https://finniewallet.com/" # the base hostname & protocol for your site
+plugins:
+  - jekyll-sitemap

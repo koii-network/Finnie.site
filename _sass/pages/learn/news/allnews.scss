@@ -1,0 +1,122 @@
+@import "variables";
+
+#allnews {
+  background: linear-gradient(90deg, #030332 0%, #171753 100%);
+  color: $white;
+  padding: 0px 0;
+  min-height: 456px;
+  .container {
+    padding-top: 8rem;
+  }
+
+  .backfront {
+    display: flex;
+    position: relative;
+    height: 75px;
+    top: 100px;
+    background: linear-gradient(180deg, #c4f1ee 0%, #ffffff 100%);
+    transform: matrix(1, 0, 0, -1, 0, 0);
+  }
+
+  .backend {
+    display: flex;
+    position: relative;
+    height: 256px;
+    top: 100px;
+    background: linear-gradient(180deg, #c4f1ee 0%, #ffffff 100%);
+  }
+  .btn.rebrand {
+    background: #9be7c4;
+    color: #171753;
+    width: fit-content;
+    display: inline-flex;
+    margin-left: 15em;
+  }
+  a {
+    text-decoration: none;
+    color: $white;
+  }
+
+  .news1 {
+    max-width: 251px;
+    color: $white;
+    a {
+      color: $white;
+    }
+    img {
+      margin-top: 20px;
+      width: 251px;
+      height: 202px;
+
+      background: #f5f5f5;
+      box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.16);
+      border-radius: 4px;
+      text-align: center;
+      object-fit: cover;
+    }
+    h6 {
+      width: 251px;
+      font-weight: 600;
+      font-size: 15px !important;
+      margin-top: 20px;
+      margin-bottom: 0px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      color: $white;
+    }
+
+    p {
+      font-size: 15px !important;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      color: $white;
+    }
+  }
+
+  @media (max-width: $xs) {
+    .btn.rebrand {
+      background: #9be7c4;
+      color: #171753;
+      width: fit-content;
+      display: flex;
+      margin: 1em 0 1em 3em;
+    }
+    .news1 {
+      max-width: 145px;
+      a {
+        color: #171753;
+      }
+      img {
+        margin-top: 20px;
+        width: 145px;
+        height: 115px;
+
+        background: #f5f5f5;
+        box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.16);
+        border-radius: 4px;
+        text-align: center;
+      }
+      h6 {
+        width: 145px;
+        font-weight: 600;
+        font-size: 15px !important;
+        margin-top: 20px;
+        margin-bottom: 0px;
+      }
+      p {
+        font-size: 15px !important;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+      }
+    }
+  }
+}
