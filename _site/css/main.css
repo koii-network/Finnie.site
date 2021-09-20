@@ -962,7 +962,7 @@
 
 #run_a_node .run_a_node-wrapper .run_a_node-content h1 { text-align: center; font-family: "Sora", sans-serif !important; }
 
-#run_a_node .run_a_node-wrapper .run_a_node-content p.description { text-align: center; max-width: 62%; margin-bottom: 79px; font-family: "Sora", sans-serif !important; }
+#run_a_node .run_a_node-wrapper .run_a_node-content p.description { text-align: center; margin-bottom: 79px; font-family: "Sora", sans-serif !important; }
 
 #run_a_node .run_a_node-wrapper .run_a_node-content .run_a_node-cards { position: relative; max-width: 950px; margin: 0 auto; margin-bottom: 51px; }
 
@@ -978,7 +978,7 @@
 
 #run_a_node .run_a_node-wrapper .run_a_node-content .run_a_node-cards .run_a_node-card p { font-size: 16px !important; line-height: 32px; font-family: "Sora", sans-serif !important; }
 
-#run_a_node .run_a_node-wrapper .run_a_node-content .btn-get { background: #bef0ed; border-radius: 24px; width: fit-content; height: 40px; font-size: 16px !important; line-height: 24px; color: #171753; font-family: "Sora", sans-serif !important; }
+#run_a_node .run_a_node-wrapper .run_a_node-content .btn-get { background: #bef0ed; border-radius: 24px; width: 270px; height: 40px; font-size: 16px !important; line-height: 24px; color: #171753; font-family: "Sora", sans-serif !important; }
 
 @media (max-width: 1200px) { #run_a_node { padding: 53px 0; } #run_a_node .run_node_img { right: -55px; top: 57%; } #run_a_node .run_a_node-wrapper .run_a_node-content { padding: 0 16px; } #run_a_node .run_a_node-wrapper .run_a_node-content h1 { width: 100%; text-align: left; font-size: 32px !important; } #run_a_node .run_a_node-wrapper .run_a_node-content p.description { width: 100%; text-align: left; max-width: unset; line-height: 32px; font-size: 16px !important; } #run_a_node .run_a_node-wrapper .run_a_node-content .run_a_node-cards { max-width: 950px; margin: 0 auto; margin-bottom: 30px; } #run_a_node .run_a_node-wrapper .run_a_node-content .run_a_node-cards .run_node_dots { right: unset; bottom: unset; top: -40px; left: -7px; } #run_a_node .run_a_node-wrapper .run_a_node-content .run_a_node-cards .run_a_node-card { width: 100%; margin-bottom: 30px; height: unset; } #run_a_node .run_a_node-wrapper .run_a_node-content .run_a_node-cards .run_a_node-card .card-top { flex-direction: row; align-items: center; } #run_a_node .run_a_node-wrapper .run_a_node-content .run_a_node-cards .run_a_node-card h2 { margin-bottom: 0; } #run_a_node .run_a_node-wrapper .run_a_node-content .run_a_node-cards .run_a_node-card h6 { min-height: unset; margin-left: 18px; margin-bottom: 0; } #run_a_node .run_a_node-wrapper .run_a_node-content .run_a_node-cards .run_a_node-card p { font-size: 14px !important; line-height: 24px; } }
 
@@ -986,15 +986,17 @@
 
 #revolution .revolution-area { position: relative; padding-bottom: 70px; display: flex; flex-direction: column; }
 
+#revolution .finnie-video { margin: 70px 0; display: flex; justify-content: center; /* align-content: stretch; */ }
+
 #revolution .videos { display: flex; flex-direction: row; justify-content: space-between; position: relative; }
 
-#revolution .videos .video-item { border-top-right-radius: 15px; border-top-left-radius: 15px; max-width: 330px; background: #141125; box-shadow: 0px 124px 144px -56px rgba(43, 29, 103, 0.06); z-index: 9; transition: all 0.2s ease-out; min-height: 450px; }
+#revolution .videos .video-item { border-top-right-radius: 15px; border-top-left-radius: 15px; max-width: 330px; background: #141125; box-shadow: 0px 124px 144px -56px rgba(43, 29, 103, 0.06); z-index: 9; transition: all 0.2s ease-out; min-height: 350px; }
 
 #revolution .videos .video-item:hover { transform: translate(0, -1rem); transition: all 0.2s ease-out; }
 
 #revolution .videos .video-item .ytblink { width: 330px; height: 197px; }
 
-#revolution .videos .video-item img { border-top-right-radius: 15px; border-top-left-radius: 15px; width: 330px; height: 232px; max-width: 100%; object-fit: fill; }
+#revolution .videos .video-item img { border-top-right-radius: 15px; border-top-left-radius: 15px; width: 330px; height: 197px; max-width: 100%; object-fit: fill; }
 
 #revolution .videos .video-item:focus { text-decoration: none; }
 
