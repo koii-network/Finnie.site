@@ -1,23 +1,32 @@
 @import "variables";
 
 #footer {
-  background: #171753;
+  // background: #171753;
   color: $white;
-  padding: 40px 0 24px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  
+  padding: 12px 25px;
+  background: linear-gradient(90deg, #030332 0%, #171753 100%);
+  .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
   .logo-area{
+    width: 200px;
     font-weight: 600;
     font-size: 20px;
     line-height: 25px;
     letter-spacing: 0.03em;
+    a{
+      color: #5ed9d1;
+      text-decoration: none;
+    }
   }
   .social-area{
     display: flex;
     flex-direction: row;
-
+    justify-content: space-between;
+    width: 200px;
   }
   @media (max-width: 768px) {
     .container {
