@@ -439,6 +439,11 @@
       right: -305px;
       top: -100px;
     }
+    .clear {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
     .num {
       font-size: 32px;
       color: white;
