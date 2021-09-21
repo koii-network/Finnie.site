@@ -11,6 +11,7 @@
     justify-content: space-between;
     align-items: center;
   }
+  .mobile{display: none;}
 
   .logo-area{
     width: 200px;
@@ -93,7 +94,19 @@
       color: white;
     }
   }
-  @media (max-width: 768px) {
-    
+  @media (max-width: 980px) {
+    .container{
+      flex-direction: column;
+    }
+    .mobile{display: block;}
+    .logo-area{
+      width: auto;
+      font-size: 20px;
+      line-height: 25px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-bottom: 10px;
+    }
   }
 }
